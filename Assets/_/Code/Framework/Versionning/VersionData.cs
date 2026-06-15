@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Versionning.Editor
+namespace VersionAssembly.Runtime
 {
     [CreateAssetMenu(fileName = "VersionData", menuName = "Data/VersionData")]
     public class VersionData : ScriptableObject
