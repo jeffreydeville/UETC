@@ -1,0 +1,3 @@
+[submodule "Packages/MyFirstPackage"]
+	path = Packages/MyFirstPackage
+	url = https://github.com/jeffreydeville/MyFirstPackage.git
