@@ -8,6 +8,7 @@ using VersionAssembly.Runtime;
 public class BuildProcess : IPreprocessBuildWithReport
 {
     public int callbackOrder => 0;
+    
 
     public void OnPreprocessBuild(BuildReport report)
     {
