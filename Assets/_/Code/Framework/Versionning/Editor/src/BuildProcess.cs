@@ -11,7 +11,7 @@ public class BuildProcess : IPreprocessBuildWithReport
 
     public void OnPreprocessBuild(BuildReport report)
     {
-        var data = AssetDatabase.LoadAssetAtPath<VersionData>("Assets/_/Code/Framework/Versionning/VersionData.cs");
+        var data = AssetDatabase.LoadAssetAtPath<VersionData>("Assets/VersionData.asset");
         if (data == null)
         {
             UnityEngine.Debug.LogError("VersionData introuvable à Assets/Data/VersionData.asset");

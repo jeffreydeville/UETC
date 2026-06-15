@@ -1301,6 +1301,7 @@ GameObject:
   - component: {fileID: 1239335180}
   - component: {fileID: 1239335182}
   - component: {fileID: 1239335181}
+  - component: {fileID: 1239335183}
   m_Layer: 5
   m_Name: Version Build
   m_TagString: Untagged
@@ -1429,6 +1430,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239335179}
   m_CullTransparentMesh: 1
+--- !u!114 &1239335183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239335179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33382b3d7a54b1c45af399ba435e8cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: VersionAssembly.Runtime::Versionning.ShowCurrentVersion
+  m_Label: {fileID: 1239335181}
+  m_VersionData: {fileID: 11400000, guid: 3a295a232c2ac574b884dec9670b89f7, type: 2}
+  m_ShowVersion: 1
+  m_ShowGitHash: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
