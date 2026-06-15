@@ -1384,7 +1384,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 4
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1443,7 +1443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: VersionAssembly.Runtime::Versionning.ShowCurrentVersion
   m_Label: {fileID: 1239335181}
-  m_VersionData: {fileID: 11400000, guid: 3a295a232c2ac574b884dec9670b89f7, type: 2}
+  m_VersionData: {fileID: 11400000, guid: c80a3e50655238744a9d910c7c1b42d7, type: 2}
   m_ShowVersion: 1
   m_ShowGitHash: 1
 --- !u!1660057539 &9223372036854775807
