@@ -20,7 +20,7 @@ public class BuildProcess : IPreprocessBuildWithReport
 
         data.version = Application.version;
         data.gitHash = GetGitHash();
-
+        data.gitBranch = GetGitBranch();
         EditorUtility.SetDirty(data);
         AssetDatabase.SaveAssets();
     }
@@ -40,5 +40,21 @@ public class BuildProcess : IPreprocessBuildWithReport
         string hash = p.StandardOutput.ReadToEnd().Trim();
         p.WaitForExit();
         return hash;
+    }
+    private static string GetGitBranch()
+    {
+        var p = new Process
+        {
+            StartInfo = new ProcessStartInfo("git", "rev-parse --abbrev-ref HEAD")
+            {
+                RedirectStandardOutput = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            }
+        };
+        p.Start();
+        string branch = p.StandardOutput.ReadToEnd().Trim();
+        p.WaitForExit();
+        return branch;
     }
 }
