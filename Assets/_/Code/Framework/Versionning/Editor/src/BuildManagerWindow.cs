@@ -48,6 +48,14 @@ namespace Versionning.Editor
             if (GUILayout.Button("Rafraîchir"))
                 RefreshGitInfo();
         }
+        
+        private void RefreshGitInfo()
+        {
+            m_Branch = GitUtility.GetCurrentBranch();
+            m_Tag = GitUtility.GetCurrentTag();
+            m_Commit = GitUtility.GetShortCommitHash();
+            m_IsClean = GitUtility.IsClean();
+        }
 
         private void DrawVersionPanel()
         {
@@ -59,6 +67,8 @@ namespace Versionning.Editor
 
             EditorGUILayout.LabelField("Résultat", GetVersionString());
         }
+        
+        private string GetVersionString() => $"v{m_Major}.{m_Minor}.{m_Patch}";
 
         private void DrawActionsPanel()
         {
@@ -75,17 +85,7 @@ namespace Versionning.Editor
 
             if (GUILayout.Button("Build Project"))
                 BuildProcessor.BuildProject();
-        }
-
-        private string GetVersionString() => $"v{m_Major}.{m_Minor}.{m_Patch}";
-
-        private void RefreshGitInfo()
-        {
-            m_Branch = GitUtility.GetCurrentBranch();
-            m_Tag = GitUtility.GetCurrentTag();
-            m_Commit = GitUtility.GetShortCommitHash();
-            m_IsClean = GitUtility.IsClean();
-        }
+        } 
 
         private void CreateTag()
         {

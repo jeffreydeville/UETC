@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81ee1cd2c49f68e438da44661f8f6f68, type: 3}
   m_Name: VersionData
   m_EditorClassIdentifier: VersionAssembly.Runtime::VersionAssembly.Runtime.VersionData
-  version: 0.1.6
-  gitHash: 73bf994
+  version: 0.2.0
+  gitHash: 725e650
   gitBranch: Main
-  buildDate: 2026-06-16 09:31
+  buildDate: 2026-06-16 09:38
