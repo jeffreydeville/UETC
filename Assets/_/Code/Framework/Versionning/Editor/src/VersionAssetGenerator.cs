@@ -5,7 +5,8 @@ using UnityEditor.Build.Reporting;
 using UnityEngine;
 using VersionAssembly.Runtime;
 
-namespace BuildManager.Editor
+
+namespace Versionning.Editor
 {
     public class VersionAssetGenerator : IPreprocessBuildWithReport
     {
