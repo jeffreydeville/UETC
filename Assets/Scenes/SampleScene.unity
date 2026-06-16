@@ -1445,7 +1445,9 @@ MonoBehaviour:
   m_Label: {fileID: 1239335181}
   m_VersionData: {fileID: 11400000, guid: c80a3e50655238744a9d910c7c1b42d7, type: 2}
   m_ShowVersion: 1
-  m_ShowGitHash: 0
+  m_ShowGitHash: 1
+  m_ShowBranch: 0
+  m_ShowBuildDate: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

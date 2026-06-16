@@ -1,0 +1,12 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/TestWindow.uss?fileID=7433441132597879392&amp;guid=a17c7bcd90ebf3b40b3d7a89d8f6ff2e&amp;type=3#TestWindow"/>
+    <ui:VisualElement name="VisualElement" style="flex-grow: 0; flex-direction: row; flex-wrap: nowrap; flex-shrink: 0; aspect-ratio: auto; justify-content: space-between; align-items: auto; padding-right: 50px; align-content: auto;">
+        <ui:VisualElement name="Logo" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/LePandaQuaternion.png?fileID=2800000&amp;guid=12a1953225cbc9640aaece11e024e376&amp;type=3#LePandaQuaternion&quot;); flex-shrink: 0; justify-content: flex-start; width: 100px; height: 50px; aspect-ratio: 1.5; align-self: auto; align-items: flex-end; align-content: flex-end; flex-wrap: nowrap; max-width: 150px; max-height: 100px; -unity-text-align: upper-left; white-space: normal;"/>
+        <ui:Label text="Hello World! With Style!" name="Label" class="custom-label" style="align-items: auto; justify-content: space-between; align-self: center; align-content: flex-end; aspect-ratio: auto; width: 200px; height: 50px; flex-wrap: nowrap; white-space: normal; color: rgb(222, 166, 100); flex-direction: row; background-position-x: right 0; right: auto; top: auto; left: auto; bottom: auto; padding-right: 1px;"/>
+    </ui:VisualElement>
+    <ui:Foldout text="Foldout" name="Tag" style="flex-direction: column;">
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+            <ui:Button text="COUCOU" name="Scare" class="tag-button" style="border-bottom-width: 1px; color: rgb(255, 255, 255); background-color: rgba(255, 133, 0, 0.3);"/>
+        </ui:VisualElement>
+    </ui:Foldout>
+</ui:UXML>

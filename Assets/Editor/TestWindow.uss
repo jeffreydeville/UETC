@@ -1,0 +1,25 @@
+.custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+}
+
+.tag-button {
+    border-bottom-width: 0;
+    margin-bottom: 5px;
+}
+
+#Tag {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(136, 92, 52);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-left-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+}
+
