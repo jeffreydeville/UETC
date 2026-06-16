@@ -8,5 +8,6 @@ namespace VersionAssembly.Runtime
         public string version;
         public string gitHash;
         public string gitBranch;
+        public string buildDate;
     }
 }

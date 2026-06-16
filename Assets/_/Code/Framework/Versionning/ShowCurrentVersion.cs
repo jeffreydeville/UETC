@@ -1,28 +1,27 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using VersionAssembly.Runtime;
 
-namespace Versionning
+namespace VersionAssembly.Runtime
 {
     public class ShowCurrentVersion : MonoBehaviour
     {
-        #region Publics
-        #endregion
-        
-        #region Unity API
         [SerializeField] private TextMeshProUGUI m_Label;
         [SerializeField] private VersionData m_VersionData;
         [SerializeField] private bool m_ShowVersion = true;
         [SerializeField] private bool m_ShowGitHash = true;
-        
+        [SerializeField] private bool m_ShowBranch = false;
+        [SerializeField] private bool m_ShowBuildDate = false;
+
         private void Start()
         {
-            m_Label.text = (m_ShowVersion ? $"v{m_VersionData.version}" : "")
-                           + (m_ShowVersion && m_ShowGitHash ? " · " : "")
-                           + (m_ShowGitHash ? m_VersionData.gitHash : "");
+            var parts = new List<string>();
+            if (m_ShowVersion) parts.Add($"v{m_VersionData.version}");
+            if (m_ShowBranch) parts.Add(m_VersionData.gitBranch);
+            if (m_ShowGitHash) parts.Add(m_VersionData.gitHash);
+            if (m_ShowBuildDate) parts.Add(m_VersionData.buildDate);
+
+            m_Label.text = string.Join(" · ", parts);
         }
-        #endregion
-        
-        
     }
 }
